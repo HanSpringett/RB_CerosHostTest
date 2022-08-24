@@ -1,0 +1,625 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '7.20.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'redbull',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'bulletin-goodyear',
+            issueAliasSlug: 'goodyear',
+            issue: {"id":663510,"projectId":99403,"slug":"experience-62f214dd768c8","name":"Goodyear","status":"published","creationDate":"2022-08-09T08:03:41.000Z","lastModifiedDate":"2022-08-19T14:28:28.000Z","deletionDate":null,"firstPublishedDate":"2022-08-09T15:07:39.000Z","wipExperienceVersionId":2577856,"publishedExperienceVersionId":2599600,"createdByMemberId":12874,"primaryIssueAliasId":924288,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/redbull\/studio-thumbnails\/page-62f685319fc0d.jpg","importLinkShared":0,"lastPublishedDate":"2022-08-19T14:28:33.000Z","lastModifiedByMemberId":19795,"lastPublishedByMemberId":19795,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"62f214dd-cacf428738c55","title":"Goodyear"},
+            docVersion: {"id":2599600,"experienceId":663510,"slug":"experience-version-62ff9e114c280","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/redbull\/doc-version-json\/v11\/experience-version-62ff9e114c280.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":null,"seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/redbull\/pages\/page-62ff9e114c290","overrides":{"mobile":{"initiallyDisabled":false}},"initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/redbull\/page-thumbnails\/2022\/08\/19\/020457278a7b33b31b2714941237867d\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2022-08-19T14:28:33.000Z","modificationDate":"2022-08-19T14:28:33.000Z","publishedDate":"2022-08-19T14:28:33.000Z","committedByMemberId":19795,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":1,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"mobile"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":0,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Oswald|300|normal":{"familyName":"Oswald","familyGuid":"Google|Oswald","fontWeight":300,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Google|Oswald|300|normal","variantName":"Light","cssFamilyName":"Oswald","api":"Google"},"Google|Oswald|400|normal":{"familyName":"Oswald","familyGuid":"Google|Oswald","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Google|Oswald|400|normal","variantName":"Normal","cssFamilyName":"Oswald","api":"Google"},"Google|Oswald|500|normal":{"familyName":"Oswald","familyGuid":"Google|Oswald","fontWeight":500,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Google|Oswald|500|normal","variantName":"Medium","cssFamilyName":"Oswald","api":"Google"},"Google|Oswald|600|normal":{"familyName":"Oswald","familyGuid":"Google|Oswald","fontWeight":600,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Google|Oswald|600|normal","variantName":"Semi-Bold","cssFamilyName":"Oswald","api":"Google"},"Google|Oswald|700|normal":{"familyName":"Oswald","familyGuid":"Google|Oswald","fontWeight":700,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Google|Oswald|700|normal","variantName":"Bold","cssFamilyName":"Oswald","api":"Google"},"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|21ce084d-17bc-11ed-89a4-0ea31dcec4dd":{"familyName":"Oswald","familyGuid":"Uploaded|21cd3324-17bc-11ed-89a4-0ea31dcec4dd","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Uploaded|21ce084d-17bc-11ed-89a4-0ea31dcec4dd","variantName":"BoldItalic","cssFamilyName":"Oswald-BoldItalic-pcf5rbKe","cssFileURL":"fonts\/d0e3d383-3f44-4a48-9d1c-36628c33ab11\/oswald-bolditalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|d595bfed-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Bull","familyGuid":"Uploaded|d3c55a8f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|d595bfed-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Bold","cssFamilyName":"Bull-Bold-SOHMV8SR","cssFileURL":"fonts\/2b759e78-407e-45ca-9ebb-4acc8a56b4fb\/bull-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|d595c2ce-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Bull","familyGuid":"Uploaded|d3c55a8f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|d595c2ce-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Bull-Regular-H7wPU5hR","cssFileURL":"fonts\/1f72672f-cc6e-4774-9dde-9eb5897459b5\/bull-regular.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":false,"Position Interactions":true,"Project Miller Prototype":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":false,"Admin Redesign":false,"Unified Login Theme":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":true,"trackingID":"UA-85611057-1","trackPageViewsForStandaloneExperiences":true,"eventCategory":"ceros-event","trackClicks":false,"clickEventAction":"ceros-click","trackHovers":false,"hoverEventAction":"ceros-hover"},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            }
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Goodyear</title>
+
+
+
+
+    <meta property="og:title" content="Goodyear"/>
+        <meta property="og:image" content="media/020457278a7b33b31b2714941237867d/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Goodyear">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/020457278a7b33b31b2714941237867d/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-62ff9e114c280.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_redbull_document_versions_experience_version_62ff9e114c280",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js"></script>
+        <script>
+                if (top === window) {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'UA-85611057-1', {
+                        send_page_view: false
+                    });
+                }
+        </script>
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.b0ceeaf72d783a0ad6b0185c8b3c82d5.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.613f6c0d32a2dbea9d1f87a27d6c9348.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">From factory to trail, Goodyear Bike’s gravity-focused Newton MTF and Newton MTR mountain bike tyres have been developed to help you master any terrain - from forest floor to high mountain peaks.</p>
+<p class="text-component">A bike can be said to be only as good as its tyres. It can be the lightest, aerodynamically  optimised road racing machine or the toughest all-terrain animal around, but all that research and design counts for nothing if the rubber isn’t up to scratch – it’s the only part of the bicycle that comes into contact with your surroundings, after all. With the right tyre unlocking the full potential of your ride, it’s important to get your choice spot on.
+
+Enter Goodyear. Renowned worldwide for its success in the automotive arena (and its iconic blue and yellow blimp), the tyre specialist produced its first bicycle model in 1898 and has been keeping wheels rolling ever since.
+
+In 2018, the brand re-entered the worlds of road and off-road cycling, bringing decades of expertise in creating high-performance and class-leading tyres. The Newton MTF and Newton MTR additions to the brand’s concise but focused range boil all that experience down into a set of mountain mastering tyres that will keep you firmly gripped when the gravity goes full gnar…</p>
+<p class="text-component">Inside the factory</p>
+<p class="text-component">CHAPTER 1</p>
+<p class="text-component">Like the full Goodyear Bicycle Tire range, the Newton MTF and Newton MTR have been through a vigorous research and development process – both in the factory and the field.
+
+Some of the biggest names in mountain biking have been involved in the process as part of Goodyear’s Wingfoot Alliance, with riders such as Olly Wilkins, Jono Jones, Joel Anderson, and Conor Macfarlane feeding into initial ideas as well as putting prototypes through their paces.
+
+In the middle of this full-send sandwich, the tyre is designed, developed, and manufactured in a dedicated bicycle tyre factory in Taiwan. Not only does this guarantee that the tyre you’re riding is a genuine Goodyear-approved product (and not just some other manufacturer’s offcuts with a Goodyear label slapped on the side), but it also ensures that all stages of the production process (more on which below) are up to the same high standards you expect from a premium tyre.</p>
+<p class="text-component">Natural rubber is mixed with additives, synthetic rubber and oils to create a compound. Any inconsistencies and air are removed before it is cured, vulcanized and tested in the lab. Once it’s got the green light, it will be selected alongside up to two other compounds, forced through a die and cooled to finish the process.</p>
+<p class="text-component">Concocting the tread compound</p>
+<p class="text-component">STEP 1</p>
+<p class="text-component">The casing rubber goes through a process similar to the tread compound but also has carbon black or a light brown additive added into the mix, giving the sidewalls their colour while boosting strength and durability. Heated and pressed into nylon to form the tyre’s carcass, it is checked to ensure its thickness is correct before being cut to length.</p>
+<p class="text-component">Crafting the casing</p>
+<p class="text-component">STEP 2</p>
+<p class="text-component">The building drum is where the magic happens. First up, the casing is rolled onto the drum and joined. Two aramid beads pre-stretched to a perfect tension are placed on top of the casing and any butyl inserts or sidewall protection. The casing is folded over the bead, chafer fabric is added to protect the bead, and the tread compound is pressed onto the exterior. Finishing touches like sidewall graphics are applied, creating a ‘green tyre’ ready for curing.</p>
+<p class="text-component">Bringing it together</p>
+<p class="text-component">STEP 3</p>
+<p class="text-component">The final manufacturing stage is important as it’s where the tyre gets its tread pattern. A negative mold is placed into a curing machine, followed by the green tyre. The rubber is blasted into the mold with a combination of heat and pressure before being allowed to cool down.</p>
+<p class="text-component">Putting the Goodyear stamp on it</p>
+<p class="text-component">STEP 4</p>
+<p class="text-component">Tyre complete; it’s almost ready for field testing. But before it’s let loose on the trials, it gets a final once over in the factory, including experiments in the lab to check the rubber’s characteristics are the same after vulcanisation and a drum test on a futuristic-looking rolling road.</p>
+<p class="text-component">The finishing touches</p>
+<p class="text-component">STEP 5</p>
+<p class="text-component">Introducing the Newton MTF and Newton MTR</p>
+<p class="text-component">CHAPTER 2</p>
+<p class="text-component">Goodyear Bike’s latest additions –the Newton MTF and Newton MTR – have been developed to give riders confidence-inspiring control across the whole spectrum of gravity MTB. From trail-taming to enduro epics to full-on double black downhill race runs, each tread compound layup and casing materials have been blended to provide pro-level performance, descent after the descent, ride after ride.</p>
+<p class="text-component">Inspired by motocross tyres, the tread design packs large blocks that are just as good for straight-line control as they are cornering. The layout also maximises dirt shedding capabilities, keeping you shredding regardless of conditions.</p>
+<p class="text-component">Tread patterns</p>
+<p class="text-component">Compound: Trail2
+TPI: 1x60TPI
+Protection: Armor
+Sizes: 27.5x2.5, 29x2.5</p>
+<p class="text-component">Trail</p>
+<p class="text-component">Compound: Grip3S
+TPI: 2x120TPI
+Protection: EN Wall 
+Sizes: 27.5x2.5, 29x2.5</p>
+<p class="text-component">Enduro</p>
+<p class="text-component">A rounded profile increases the tyre’s damping ability, improving traction when hitting a berm and giving you the confidence to push your lean to the limit. Taller tread on the edges lengthens the tyre’s footprint, increasing your grip and boosting your braking control when you need it most.</p>
+<p class="text-component">Casing profile
+</p>
+<p class="text-component">Compound: Grip3S
+TPI: 2x60TPI
+Protection: DH Wall
+Sizes: 27.5x2.5, 29x2.5</p>
+<p class="text-component">Downhill</p>
+<p class="text-component">The Goodyear Bike family</p>
+<p class="text-component">CHAPTER 3</p>
+<p class="text-component">The Goodyear Bike range doesn’t stop at the new Newton MTF and Newton MTR releases. Since the brand re-established its place at the pinnacle of the bicycle tyre market in 2018, Goodyear has created high-end solutions for all types of riders – whether they’re going for the yellow jersey at Le Tour de France or dipping their toe in the world of gravel grinding.</p>
+<p class="text-component">Tubeless Complete</p>
+<p class="text-component">The majority of the family is available with the brand’s unique Tubeless Complete technology. A pioneering leap forward compared to the Tubeless Ready (TLR) set-up that is fast becoming the industry standard, the design makes fitting super easy, improves air retention between rides, and ensures more sealant stays in the rim bed after installation – meaning it’s there when you actually need it most. In fact, it’s so good that the traditionally tubeless-sceptic world of professional road cycling is embracing it with teams like Human Powered Health leading the charge.</p>
+<img src="media/4f0bd05e25b51fe9f27de36a8cc7a239/goodyear-bicyle-logo-yellow.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="media/4fe84e48d2a3c9bf841718719095e538/texture-2.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="media/4fe84e48d2a3c9bf841718719095e538/texture-2.png" alt=""  class="image-component"/>
+<img src="media/211fe8f2eaf76e555b8a9424c0e50768/tyremark.png" alt=""  class="image-component"/>
+<img src="media/211fe8f2eaf76e555b8a9424c0e50768/tyremark.png" alt=""  class="image-component"/>
+<img src="media/211fe8f2eaf76e555b8a9424c0e50768/tyremark.png" alt=""  class="image-component"/>
+<img src="media/211fe8f2eaf76e555b8a9424c0e50768/tyremark.png" alt=""  class="image-component"/>
+<img src="media/211fe8f2eaf76e555b8a9424c0e50768/tyremark.png" alt=""  class="image-component"/>
+<img src="media/211fe8f2eaf76e555b8a9424c0e50768/tyremark.png" alt=""  class="image-component"/>
+<img src="media/211fe8f2eaf76e555b8a9424c0e50768/tyremark.png" alt=""  class="image-component"/>
+<img src="media/f07353c7143727d5d34b202146c75d90/back-2.png" alt=""  class="image-component"/>
+<img src="media/cad23070bcab6d09d2ad40139cb624e7/back-3.png" alt=""  class="image-component"/>
+<img src="media/f22a1154a9a3480a21abd105a42d564f/back.png" alt=""  class="image-component"/>
+<img src="media/c4c191d29fe28bf1543821f23483c826/back.png" alt=""  class="image-component"/>
+<img src="media/ec1971d0861098569f099cdb57fb1d82/step-1.png" alt=""  class="image-component"/>
+<img src="media/2eaf6e341164ef306bb377ba6ee544c3/step-2.png" alt=""  class="image-component"/>
+<img src="media/ac718d1c855f49b2f79f71b9ec059d84/step-3.png" alt=""  class="image-component"/>
+<img src="media/ebae817c911b72e75ee16966dc5bee38/step-4.png" alt=""  class="image-component"/>
+<img src="media/ded9aa5ffc0a51817cc7acea79f6fb83/step-5.png" alt=""  class="image-component"/>
+<img src="media/4fe84e48d2a3c9bf841718719095e538/texture-2.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="media/5bfe75ae90c27c876380cbb97fe9df1c/4-section.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="media/f9d3d6d64046e1ddefb6b9c1f90060e4/back-2.png" alt=""  class="image-component"/>
+<img src="media/533b8af1364cea5340c74e19ea7ed80a/back.png" alt=""  class="image-component"/>
+<img src="media/12263a25918dcd4328affe27b6498eb6/back.png" alt=""  class="image-component"/>
+<img src="media/4fe84e48d2a3c9bf841718719095e538/texture-2.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="media/4fe84e48d2a3c9bf841718719095e538/texture-2.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<p class="text-component">Like the MTF, this rear-focused tyre has an air of MX about it. Its layout is focused on transferring your pedal strokes to power, delivering speed and durability whether it’s dry as a bone or a full-on winter mud fest.</p>
+<p class="text-component">Tread patterns</p>
+<p class="text-component">Compound: Trail2
+TPI: 1x60TPI
+Protection: Armor
+Sizes: 27.5x2.4, 27.5x2.6, 29x2.4</p>
+<p class="text-component">Trail</p>
+<p class="text-component">Compound: Grip3
+TPI: 2x120TPI
+Protection: EN Wall 
+Sizes: 27.5x2.4, 27.5x2.6, 29x2.4</p>
+<p class="text-component">Enduro</p>
+<p class="text-component">A squared profile guarantees tread engagement at all times, boosting drive, braking traction and cornering confidence as a result.</p>
+<p class="text-component">Casing profile
+</p>
+<p class="text-component">Compound: Grip3
+TPI: 2x60TPI
+Protection: DH Wall
+Sizes: 27.5x2.4, 27.5x2.6, 29x2.4</p>
+<p class="text-component">Downhill</p>
+<img src="media/cb0df75e5f69b82ad0e9234f70a0e5fb/image-2.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/18e2079f9e2deef4435401be47fe86f3/2-section.png" alt=""  class="image-component"/>
+<p class="text-component">NEWTON MTF</p>
+<p class="text-component">NEWTON MTR</p>
+<p class="text-component">VISIT GOODYEAR</p>
+<img src="media/4fe84e48d2a3c9bf841718719095e538/texture-2.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="media/c1c31b4f5fc781d08cafb3cba06f2b79/newton-mtf-trail.png" alt=""  class="image-component"/>
+<img src="media/5793acbeae425a17040e1998a067a396/newton-mtf-enduro.png" alt=""  class="image-component"/>
+<img src="media/dd254c6e477c7b33987ac68d7383d6e2/newton-mtf-downhill.png" alt=""  class="image-component"/>
+<img src="media/99d45e191bb1fc2b1389b71e94d5ca0e/newton-mtr-trail.png" alt=""  class="image-component"/>
+<img src="media/6fa3d3090f073f3120e205b366a4cd7a/newton-mtr-enduro.png" alt=""  class="image-component"/>
+<img src="media/eabb18c7fe3545fdf47e35cf9c65e84a/newton-mtr-downhill.png" alt=""  class="image-component"/>
+<p class="text-component">Rather than having hundreds of different combinations and compounds, Goodyear has removed the complication of choosing the correct tyre by creating the Simplified System. Riders just have to pick the type of riding that they do (e.g. Trail) and are left with a set of tyres developed specifically for that discipline. The result is a range of three options per tread pattern (Trail, Enduro & Downhill), rather than an overwhelming array of options, which according to the Goodyear Bike team, can all too often result in the rider buying the wrong tyre.</p>
+<p class="text-component">Simplified System expanded</p>
+<p class="text-component">Newton MTF Trail</p>
+<p class="text-component">Newton MTF Trail</p>
+<p class="text-component">Newton MTF Trail</p>
+<p class="text-component">Newton MTF Enduro</p>
+<p class="text-component">Newton MTF Enduro</p>
+<p class="text-component">Newton MTF Enduro</p>
+<p class="text-component">Newton MTF Downhill</p>
+<p class="text-component">Newton MTF Downhill</p>
+<p class="text-component">Newton MTF Downhill</p>
+<p class="text-component">Newton MTR Trail</p>
+<p class="text-component">Newton MTR Trail</p>
+<p class="text-component">Newton MTR Trail</p>
+<p class="text-component">Newton MTR Enduro</p>
+<p class="text-component">Newton MTR Enduro</p>
+<p class="text-component">Newton MTR Enduro</p>
+<p class="text-component">Newton MTR Downhill</p>
+<p class="text-component">Newton MTR Downhill</p>
+<p class="text-component">Newton MTR Downhill</p>
+<img src="media/cad23070bcab6d09d2ad40139cb624e7/back-3.png" alt=""  class="image-component"/>
+<img src="media/c4c191d29fe28bf1543821f23483c826/back.png" alt=""  class="image-component"/>
+<img src="media/533b8af1364cea5340c74e19ea7ed80a/back.png" alt=""  class="image-component"/>
+<img src="media/12263a25918dcd4328affe27b6498eb6/back.png" alt=""  class="image-component"/>
+<img src="media/e50c7875f6147318e3f47fa4a12d9070/image-1.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<p class="text-component">Inspired by motocross tyres, the tread design packs large blocks that are just as good for straight-line control as they are cornering. The layout also maximises dirt shedding capabilities, keeping you shredding regardless of conditions.</p>
+<p class="text-component">Tread patterns</p>
+<p class="text-component">Compound: Trail2
+TPI: 1x60TPI
+Protection: Armor
+Sizes: 27.5x2.5, 29x2.5</p>
+<p class="text-component">Trail</p>
+<p class="text-component">Compound: Grip3S
+TPI: 2x120TPI
+Protection: EN Wall 
+Sizes: 27.5x2.5, 29x2.5</p>
+<p class="text-component">Enduro</p>
+<p class="text-component">A rounded profile increases the tyre’s damping ability, improving traction when hitting a berm and giving you the confidence to push your lean to the limit. Taller tread on the edges lengthens the tyre’s footprint, increasing your grip and boosting your braking control when you need it most.</p>
+<p class="text-component">Casing profile
+</p>
+<p class="text-component">Compound: Grip3S
+TPI: 2x60TPI
+Protection: DH Wall
+Sizes: 27.5x2.5, 29x2.5</p>
+<p class="text-component">Downhill</p>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/f04f587b7b7a0dfa6b4e127afe2c7e3b/oil-slick-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/c2567fa7b32f1e83734cd7f79b4b189c/mtb-off-road-track-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/650caf0db0810d7df6e9537c65448964/mountains-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/20fb7c2c8ce3f1f84cc5c2cbd4668857/bike-wheel-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/c2567fa7b32f1e83734cd7f79b4b189c/mtb-off-road-track-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/9bbb6ca4f8c62cedb36b39c26694d4bb/bicycle-tread-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/20fb7c2c8ce3f1f84cc5c2cbd4668857/bike-wheel-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/650caf0db0810d7df6e9537c65448964/mountains-icon.svg" alt=""  class="image-component"/>
+<img src="media/a1ed5ebf2089abcebfc8cba7d47a602d/image-2.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<p class="text-component">Tread patterns</p>
+<p class="text-component">Trail</p>
+<p class="text-component">Enduro</p>
+<p class="text-component">Casing profile
+</p>
+<p class="text-component">Downhill</p>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/f04f587b7b7a0dfa6b4e127afe2c7e3b/oil-slick-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/c2567fa7b32f1e83734cd7f79b4b189c/mtb-off-road-track-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/20fb7c2c8ce3f1f84cc5c2cbd4668857/bike-wheel-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/650caf0db0810d7df6e9537c65448964/mountains-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Like the MTF, this rear-focused tyre has an air of MX about it. Its layout is focused on transferring your pedal strokes to power, delivering speed and durability whether it’s dry as a bone or a full-on winter mud fest.</p>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/f04f587b7b7a0dfa6b4e127afe2c7e3b/oil-slick-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Compound: Trail2
+TPI: 1x60TPI
+Protection: Armor
+Sizes: 27.5x2.4, 27.5x2.6, 29x2.4</p>
+<p class="text-component">Compound: Grip3
+TPI: 2x120TPI
+Protection: EN Wall 
+Sizes: 27.5x2.4, 27.5x2.6, 29x2.4</p>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/9bbb6ca4f8c62cedb36b39c26694d4bb/bicycle-tread-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">A squared profile guarantees tread engagement at all times, boosting drive, braking traction and cornering confidence as a result.</p>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/20fb7c2c8ce3f1f84cc5c2cbd4668857/bike-wheel-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Compound: Grip3
+TPI: 2x60TPI
+Protection: DH Wall
+Sizes: 27.5x2.4, 27.5x2.6, 29x2.4</p>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/650caf0db0810d7df6e9537c65448964/mountains-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/c2567fa7b32f1e83734cd7f79b4b189c/mtb-off-road-track-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/f04f587b7b7a0dfa6b4e127afe2c7e3b/oil-slick-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/9bbb6ca4f8c62cedb36b39c26694d4bb/bicycle-tread-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/9bbb6ca4f8c62cedb36b39c26694d4bb/bicycle-tread-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/f04f587b7b7a0dfa6b4e127afe2c7e3b/oil-slick-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/c2567fa7b32f1e83734cd7f79b4b189c/mtb-off-road-track-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/9bbb6ca4f8c62cedb36b39c26694d4bb/bicycle-tread-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/20fb7c2c8ce3f1f84cc5c2cbd4668857/bike-wheel-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/650caf0db0810d7df6e9537c65448964/mountains-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Road</p>
+<p class="text-component">Eagle F1</p>
+<p class="text-component">If you want to add some factory-level performance to your road bike, then look no further than the Eagle F1. Goodyear’s all-around road race tyre, it can hold its own on steep ascents, sweeping descents and full-throttle sprints.</p>
+<p class="text-component">Road</p>
+<p class="text-component">Eagle F1 Supersport</p>
+<p class="text-component">Does what the scales say matter at all costs? If yes, then the Eagle F1 Supersport is the tyre for you. Goodyear’s fastest road tyre, it optimises low rolling resistance with a reduced weight that can make all the difference come race day.</p>
+<p class="text-component">Road</p>
+<p class="text-component">Vector 4Seasons</p>
+<p class="text-component">Don’t let the weather stop you from riding. The Vector 4Seasons features a reinforced sidewall and anti-puncture belt to keep flats firmly at bay, while its pioneering materials and construction methods keep you in control come rain or shine.</p>
+<p class="text-component">Road</p>
+<p class="text-component">Eagle Sport</p>
+<p class="text-component">A high-performance road tyre, the Eagle Sport has the top-level construction, materials and responsiveness of the Eagle F1 range without the pro team price tag. It balances grip and the durability required to train in all conditions and is a great all-around pick.</p>
+<p class="text-component">Transit</p>
+<p class="text-component">Transit Tour</p>
+<p class="text-component">Goodyear knows a thing or two about creating tyres that get you from A to B. The Transit Tour brings its automotive expertise to the world of everyday utility cycling, providing all-weather traction that is made for the toughest environments of them all –cities and towns.</p>
+<p class="text-component">All-terrain</p>
+<p class="text-component">County</p>
+<p class="text-component">Most modern road bikes have split personalities. While designed for the road, the standardisation of disc brakes has led to increased tyre clearances and more off-piste possibilities. The County distils this into a tyre – slick in the centre but with widely spaced knobs at the side for improved control when things get loose.</p>
+<p class="text-component">All-terrain</p>
+<p class="text-component">Connector</p>
+<p class="text-component">The beauty of all-road riding is the ability to connect the quiet asphalt backroads with the gravel tracks and bridleways that were previously out of bounds for drop bar bikes. The Connector does what it says on the tin and is fast rolling on the tarmac but more than capable when things get tasty.</p>
+<p class="text-component">All-terrain</p>
+<p class="text-component">Peak</p>
+<p class="text-component">If your gravel riding resembles the rigid mountain biking of old, then the Peak is your ideal companion. An all-conquering twin of the cross-country model with the same name, it has amazing rolling efficiency regardless of the terrain you find yourself on.</p>
+<p class="text-component">Mountain</p>
+<p class="text-component">Peak</p>
+<p class="text-component">XC racers need to look no further than the Peak. Low in weight, high in rolling efficiency and complete with amazing durability and traction, this is the ultimate off-road tyre, whether tackling long alpine loops or getting your elbows out between the tape.</p>
+<p class="text-component">Mountain</p>
+<p class="text-component">Escape</p>
+<p class="text-component">The Escape is Goodyear’s trail and singletrack tyre. Slightly less aggressive than the Newton MTF and Newton MTR range, it’s at home on rolling singletrack and sweeping trails when the conditions are dry to intermediate (aka peak riding season).</p>
+<p class="text-component">Mountain</p>
+<p class="text-component">Newton MTF</p>
+<p class="text-component">Your wheels have different roles when going full send, so why not get a tyre that’s made specifically for the task at hand? The front wheel-focused Newton comes in downhill-, enduro- or trail-specific builds and will leave you firmly in control whatever the conditions.</p>
+<p class="text-component">Mountain</p>
+<p class="text-component">Newton MTR</p>
+<p class="text-component">The ying to the Newton MTF’s yang, the rear-focused Newton MTR, balances the ability to lay down the power from the start hut with a glue-like grip on berms and turns. Also available in three discipline-specific set-ups, there’s an MTR for you regardless of your chosen dose of adrenaline. </p>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/72fff2a767e68a2bb21cd9046a889ee6/o12.png" alt=""  class="image-component"/>
+<p class="text-component">Ready to #OBEYGRAVITY</p>
+<img src="media/535231db4232ca0e522ad8705750a444/back.png" alt=""  class="image-component"/>
+<img src="media/044124685c12add73bac7b6803516769/12.png" alt=""  class="image-component"/>
+<img src="media/c7ad5a4223cec59e873e1318e0a627cd/11.png" alt=""  class="image-component"/>
+<img src="media/ff705d68937959ea4b737393f7e22af8/10.png" alt=""  class="image-component"/>
+<img src="media/0dd844765b67ca2f27030bf8cce79e5f/9.png" alt=""  class="image-component"/>
+<img src="media/60f0a112501575f2e7e9d5e86c3ba646/8.png" alt=""  class="image-component"/>
+<img src="media/c4c9288687fc4e2a12f63691b7976997/7.png" alt=""  class="image-component"/>
+<img src="media/6b4c7efd4a550c885070c22c1c09791c/6.png" alt=""  class="image-component"/>
+<img src="media/8dbaf29ecaf727c374985fd9aa4fb103/5.png" alt=""  class="image-component"/>
+<img src="media/7e7841fce84c6e516d6785de54c57042/4.png" alt=""  class="image-component"/>
+<img src="media/eaf1f10aacee166f958aa1eac273245e/3.png" alt=""  class="image-component"/>
+<img src="media/04e069fe949eff9bc646131e7955e738/2.png" alt=""  class="image-component"/>
+<img src="media/dc7dcf0bf407411f8db9ade611fb70ed/1.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/535231db4232ca0e522ad8705750a444/back.png" alt=""  class="image-component"/>
+<img src="null" alt=""  class="image-component"/>
+<img src="null" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="media/8a40e664a612a0f4701546a308e2b6e6/arrow.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/f04f587b7b7a0dfa6b4e127afe2c7e3b/oil-slick-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/c2567fa7b32f1e83734cd7f79b4b189c/mtb-off-road-track-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/9bbb6ca4f8c62cedb36b39c26694d4bb/bicycle-tread-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/20fb7c2c8ce3f1f84cc5c2cbd4668857/bike-wheel-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/redbull/images/2022/08/11/650caf0db0810d7df6e9537c65448964/mountains-icon.svg" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="media/9881391ffb8b5955f7e05db889df8655/gradient.png" alt=""  class="image-component"/>
+<img src="null" alt=""  class="image-component"/>
+<img src="null" alt=""  class="image-component"/>
+<img src="null" alt=""  class="image-component"/>
+<img src="null" alt=""  class="image-component"/>
+<img src="null" alt=""  class="image-component"/>
+<img src="null" alt=""  class="image-component"/>
+<img src="media/4fa8ca5b31dfdad8f63bf6708bcf29df/newtons-law.png" alt=""  class="image-component"/>
+<img src="media/af87917d70466ac9d85913900a42599e/obey.png" alt=""  class="image-component"/>
+<p class="text-component">OBEY</p>
+<p class="text-component">NEWTON'S LAW</p>
+<p class="text-component">Mountain</p>
+<p class="text-component">Newton MTR</p>
+<p class="text-component">The ying to the Newton MTF’s yang, the rear-focused Newton MTR, balances the ability to lay down the power from the start hut with a glue-like grip on berms and turns. Also available in three discipline-specific set-ups, there’s an MTR for you regardless of your chosen dose of adrenaline. </p>
+<img src="media/044124685c12add73bac7b6803516769/12.png" alt=""  class="image-component"/>
+<p class="text-component">Mountain</p>
+<p class="text-component">Newton MTF</p>
+<p class="text-component">Your wheels have different roles when going full send, so why not get a tyre that’s made specifically for the task at hand? The front wheel-focused Newton comes in downhill-, enduro- or trail-specific builds and will leave you firmly in control whatever the conditions.</p>
+<img src="media/c7ad5a4223cec59e873e1318e0a627cd/11.png" alt=""  class="image-component"/>
+<p class="text-component">Mountain</p>
+<p class="text-component">Escape</p>
+<p class="text-component">The Escape is Goodyear’s trail and singletrack tyre. Slightly less aggressive than the Newton MTF and Newton MTR range, it’s at home on rolling singletrack and sweeping trails when the conditions are dry to intermediate (aka peak riding season).</p>
+<img src="media/ff705d68937959ea4b737393f7e22af8/10.png" alt=""  class="image-component"/>
+<p class="text-component">Mountain</p>
+<p class="text-component">Peak</p>
+<p class="text-component">XC racers need to look no further than the Peak. Low in weight, high in rolling efficiency and complete with amazing durability and traction, this is the ultimate off-road tyre, whether tackling long alpine loops or getting your elbows out between the tape.</p>
+<img src="media/0dd844765b67ca2f27030bf8cce79e5f/9.png" alt=""  class="image-component"/>
+<p class="text-component">All-terrain</p>
+<p class="text-component">Peak</p>
+<p class="text-component">If your gravel riding resembles the rigid mountain biking of old, then the Peak is your ideal companion. An all-conquering twin of the cross-country model with the same name, it has amazing rolling efficiency regardless of the terrain you find yourself on.</p>
+<img src="media/60f0a112501575f2e7e9d5e86c3ba646/8.png" alt=""  class="image-component"/>
+<p class="text-component">All-terrain</p>
+<p class="text-component">Connector</p>
+<p class="text-component">The beauty of all-road riding is the ability to connect the quiet asphalt backroads with the gravel tracks and bridleways that were previously out of bounds for drop bar bikes. The Connector does what it says on the tin and is fast rolling on the tarmac but more than capable when things get tasty.</p>
+<img src="media/c4c9288687fc4e2a12f63691b7976997/7.png" alt=""  class="image-component"/>
+<p class="text-component">All-terrain</p>
+<p class="text-component">County</p>
+<p class="text-component">Most modern road bikes have split personalities. While designed for the road, the standardisation of disc brakes has led to increased tyre clearances and more off-piste possibilities. The County distils this into a tyre – slick in the centre but with widely spaced knobs at the side for improved control when things get loose.</p>
+<img src="media/6b4c7efd4a550c885070c22c1c09791c/6.png" alt=""  class="image-component"/>
+<p class="text-component">Transit</p>
+<p class="text-component">Transit Tour</p>
+<p class="text-component">Goodyear knows a thing or two about creating tyres that get you from A to B. The Transit Tour brings its automotive expertise to the world of everyday utility cycling, providing all-weather traction that is made for the toughest environments of them all –cities and towns.</p>
+<img src="media/8dbaf29ecaf727c374985fd9aa4fb103/5.png" alt=""  class="image-component"/>
+<p class="text-component">Road</p>
+<p class="text-component">Eagle Sport</p>
+<p class="text-component">A high-performance road tyre, the Eagle Sport has the top-level construction, materials and responsiveness of the Eagle F1 range without the pro team price tag. It balances grip and the durability required to train in all conditions and is a great all-around pick.</p>
+<img src="media/7e7841fce84c6e516d6785de54c57042/4.png" alt=""  class="image-component"/>
+<p class="text-component">Road</p>
+<p class="text-component">Vector 4Seasons</p>
+<p class="text-component">Don’t let the weather stop you from riding. The Vector 4Seasons features a reinforced sidewall and anti-puncture belt to keep flats firmly at bay, while its pioneering materials and construction methods keep you in control come rain or shine.</p>
+<img src="media/eaf1f10aacee166f958aa1eac273245e/3.png" alt=""  class="image-component"/>
+<p class="text-component">Road</p>
+<p class="text-component">Eagle F1 Supersport</p>
+<p class="text-component">Does what the scales say matter at all costs? If yes, then the Eagle F1 Supersport is the tyre for you. Goodyear’s fastest road tyre, it optimises low rolling resistance with a reduced weight that can make all the difference come race day.</p>
+<img src="media/04e069fe949eff9bc646131e7955e738/2.png" alt=""  class="image-component"/>
+<p class="text-component">Road</p>
+<p class="text-component">Eagle F1</p>
+<p class="text-component">If you want to add some factory-level performance to your road bike, then look no further than the Eagle F1. Goodyear’s all-around road race tyre, it can hold its own on steep ascents, sweeping descents and full-throttle sprints.</p>
+<img src="media/dc7dcf0bf407411f8db9ade611fb70ed/1.png" alt=""  class="image-component"/>
+<img src="media/66fe5c9239045071e7bd195b95a1eae3/image-7.png" alt=""  class="image-component"/>
+<img src="media/d160fffd2727ee0473848e45a8013c2e/image-6.png" alt=""  class="image-component"/>
+<img src="media/ce81f2bf5b4ac8cdb79aa12b7674ef8f/image-10.png" alt=""  class="image-component"/>
+<img src="media/9e2211287ff78e6debdc9734be9a2bc0/image-9.png" alt=""  class="image-component"/>
+<img src="media/9913e9b3f3880141bcaea8f1a9d7c47b/image-8.png" alt=""  class="image-component"/>
+<img src="media/66efa711309e91493bb920f39e5570c8/image-7.png" alt=""  class="image-component"/>
+<img src="media/d8696323112b336a8dce20c39c524e6b/image-6.png" alt=""  class="image-component"/>
+<img src="media/fc47b45dcd34ad9a69b4cbee76626739/image-8.png" alt=""  class="image-component"/>
+<img src="media/d22bfcb6ca6c1ff84e77dec0789676fc/image-4.png" alt=""  class="image-component"/>
+<img src="media/65ad5ef31fdc70108e1debccb1222ca5/image-3.png" alt=""  class="image-component"/>
+<img src="media/f3578314410211245e5d1e296342cb7a/image-2.png" alt=""  class="image-component"/>
+<img src="media/57412371e0bcbe5b83834856f9a5a5b0/image-1.png" alt=""  class="image-component"/>
+<img src="media/9e2211287ff78e6debdc9734be9a2bc0/image-9.png" alt=""  class="image-component"/>
+<img src="media/9913e9b3f3880141bcaea8f1a9d7c47b/image-8.png" alt=""  class="image-component"/>
+<img src="media/d22bfcb6ca6c1ff84e77dec0789676fc/image-4.png" alt=""  class="image-component"/>
+<img src="media/f3578314410211245e5d1e296342cb7a/image-2.png" alt=""  class="image-component"/>
+<img src="media/fc47b45dcd34ad9a69b4cbee76626739/image-8.png" alt=""  class="image-component"/>
+<img src="media/66fe5c9239045071e7bd195b95a1eae3/image-7.png" alt=""  class="image-component"/>
+<img src="media/d160fffd2727ee0473848e45a8013c2e/image-6.png" alt=""  class="image-component"/>
+<img src="media/57412371e0bcbe5b83834856f9a5a5b0/image-1.png" alt=""  class="image-component"/>
+<img src="media/d8696323112b336a8dce20c39c524e6b/image-6.png" alt=""  class="image-component"/>
+<img src="media/ce81f2bf5b4ac8cdb79aa12b7674ef8f/image-10.png" alt=""  class="image-component"/>
+<img src="media/66efa711309e91493bb920f39e5570c8/image-7.png" alt=""  class="image-component"/>
+<img src="media/65ad5ef31fdc70108e1debccb1222ca5/image-3.png" alt=""  class="image-component"/>
+<img src="media/9e2211287ff78e6debdc9734be9a2bc0/image-9.png" alt=""  class="image-component"/>
+<img src="media/9913e9b3f3880141bcaea8f1a9d7c47b/image-8.png" alt=""  class="image-component"/>
+<img src="media/d22bfcb6ca6c1ff84e77dec0789676fc/image-4.png" alt=""  class="image-component"/>
+<img src="media/f3578314410211245e5d1e296342cb7a/image-2.png" alt=""  class="image-component"/>
+<img src="media/12952f45197738fd61b887e6873d6d89/image-5.png" alt=""  class="image-component"/>
+<img src="media/03fed3a374d160e71eee52119f31ae89/image-12.png" alt=""  class="image-component"/>
+<img src="media/79f7f78380f8d3df76f77ee4235fd55e/image-11.png" alt=""  class="image-component"/>
+<img src="media/57412371e0bcbe5b83834856f9a5a5b0/image-1.png" alt=""  class="image-component"/>
+<img src="media/d8696323112b336a8dce20c39c524e6b/image-6.png" alt=""  class="image-component"/>
+<img src="media/ce81f2bf5b4ac8cdb79aa12b7674ef8f/image-10.png" alt=""  class="image-component"/>
+<img src="media/66efa711309e91493bb920f39e5570c8/image-7.png" alt=""  class="image-component"/>
+<img src="media/65ad5ef31fdc70108e1debccb1222ca5/image-3.png" alt=""  class="image-component"/>
+<img src="media/9e2211287ff78e6debdc9734be9a2bc0/image-9.png" alt=""  class="image-component"/>
+<img src="media/9913e9b3f3880141bcaea8f1a9d7c47b/image-8.png" alt=""  class="image-component"/>
+<img src="media/d22bfcb6ca6c1ff84e77dec0789676fc/image-4.png" alt=""  class="image-component"/>
+<img src="media/f3578314410211245e5d1e296342cb7a/image-2.png" alt=""  class="image-component"/>
+<img src="media/12952f45197738fd61b887e6873d6d89/image-5.png" alt=""  class="image-component"/>
+<img src="media/03fed3a374d160e71eee52119f31ae89/image-12.png" alt=""  class="image-component"/>
+<img src="media/79f7f78380f8d3df76f77ee4235fd55e/image-11.png" alt=""  class="image-component"/>
+<img src="media/57412371e0bcbe5b83834856f9a5a5b0/image-1.png" alt=""  class="image-component"/>
+<img src="media/d8696323112b336a8dce20c39c524e6b/image-6.png" alt=""  class="image-component"/>
+<img src="media/ce81f2bf5b4ac8cdb79aa12b7674ef8f/image-10.png" alt=""  class="image-component"/>
+<img src="media/66efa711309e91493bb920f39e5570c8/image-7.png" alt=""  class="image-component"/>
+<img src="media/65ad5ef31fdc70108e1debccb1222ca5/image-3.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
